@@ -66,7 +66,8 @@ variable "ipsec_psk" {
 
 
 
-# avtx-tx vars
+# avtx-tx vars  ;  used as module need to remove controller ip and password
+/*
 variable "controller_ip" {
   description = "Set controller ip"
   type        = string
@@ -75,6 +76,7 @@ variable "controller_ip" {
 variable "ctrl_password" {
     type = string
 }
+*/
 
 variable "account" {
     type = string
