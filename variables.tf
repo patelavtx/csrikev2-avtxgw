@@ -1,19 +1,3 @@
-variable "vng_name" {
-  description = "Provide VNG Name"
-  default = "vng-csrike2"
-}
-
-variable "vng_pip_az_zones" {
-  description = "Provide list of availability zones for VNG Public IP"
-  type        = list(any)
-  default = [ 1,2,3 ]
-}
-
-variable "local_network_gateway_name" {
-  description = "Provide Loca Network Gateway Name"
-  default = "csrike2"
-}
-
 variable "csr_rg_name" {
   description = "Provide CSR resource group name"
   default = "atulrg-csrike2"
@@ -67,7 +51,7 @@ variable "ipsec_psk" {
 
 
 # avtx-tx vars  ;  used as module need to remove controller ip and password
-/*
+
 variable "controller_ip" {
   description = "Set controller ip"
   type        = string
@@ -76,7 +60,7 @@ variable "controller_ip" {
 variable "ctrl_password" {
     type = string
 }
-*/
+
 
 variable "account" {
     type = string
