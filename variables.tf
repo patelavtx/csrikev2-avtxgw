@@ -50,7 +50,10 @@ variable "ipsec_psk" {
 
 
 
-# avtx-tx vars  ;  used as module need to remove controller ip and password
+
+# Removed as not needed when using module.  Uncomment if cloned and using locally, also then needs provider.tf
+/*
+# avtx-tx vars;  omit for module based runs
 
 variable "controller_ip" {
   description = "Set controller ip"
@@ -60,6 +63,7 @@ variable "controller_ip" {
 variable "ctrl_password" {
     type = string
 }
+*/
 
 
 variable "account" {
