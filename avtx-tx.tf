@@ -9,7 +9,7 @@ module "mc-transit" {
   cidr = var.cidr
   region = var.region
   account = var.account
-  resource_group = var.rg 
+  # resource_group = var.rg   # rm for use in GH sourced module
   local_as_number = var.localasn
   insane_mode = "true"
   name = "aztransit112-weu"
