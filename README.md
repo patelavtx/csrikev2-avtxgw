@@ -10,7 +10,49 @@ mc-transit <BGPoIPSEC>  CSR
 ```
 
 
+#
 ## Example of using as module.
+
+```
+
+module "csr-ikev2" {
+  source = "github.com/patelavtx/csrikev2-avtxgw"
+  account = "AZ-proj"
+  cloud = "Azure"
+  localasn = "65204"
+  cidr = "10.204.28.0/23"
+  region = "West Europe"
+}
+
+```
+
+
+## VARIABLES
+
+
+
+Suggested variables to set.  Most mc-transit variables for transit gateway can be set.
+
+| Key            | Default       | Description               |
+| ------------- |:-------------:| --------------------------:|
+| csr_rg_name    | atulrg-csrike2 |  optional         |
+| csr_rg_location| West Europe    |  optional          |
+| csr_name       | csr-ike1      |  optional          |
+| csr_vnet_address_space | 10.204.32.0/24 | optionsal |
+| csr_public_subnet_address_space | 10.204.32.0/25 | optional |
+| csr_private_subnet_address_space | 10.244.32.128/2 | optional |
+| csr_asn      | 65204 | optional |
+| admin_username | admin  | opt |
+| admin_password | Aviatrix123#  | opt |
+| ipsec_psk | Aviatrix123# | opt |
+| account |    |  mandatory |
+| cloud |     |  set to Azure module only for Azure deployment |
+| cidr |      |  mandatory ;  set transit gw vne cidr |
+| region | West Europe |  optional  |
+| localasn |        |  mandatory - set value |
+| 
+
+
 
 
 
