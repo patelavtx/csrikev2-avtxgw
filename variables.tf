@@ -93,6 +93,7 @@ variable "instance_size" {
 variable "region" {
   description = "Set regions"
   type        = string
+  default = "West Europe"
 }
 
 variable "rg" {
