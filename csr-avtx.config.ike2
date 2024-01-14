@@ -141,8 +141,8 @@ router bgp ${CSR_ASN}
   neighbor ${TX_APIPA_TUN1} soft-reconfiguration inbound
  exit-address-family
 !
-ip route ${TX_APIPA_TUN0} 255.255.255.255 Tunnel0
-ip route ${TX_APIPA_TUN1} 255.255.255.255 Tunnel1
+ip route ${TX_APIPA_TUN0} 255.255.255.255 Tunnel200
+ip route ${TX_APIPA_TUN1} 255.255.255.255 Tunnel201
 !
 end
 !
